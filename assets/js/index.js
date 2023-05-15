@@ -89,3 +89,12 @@ viewProjects.forEach((vp) => {
     containers[2].classList.add("active-container");
   });
 });
+
+/* ------------- TOGGLE SIDEMENU USERPROFILE ------------- */
+const sideUserProfile = document.getElementById("sc-dropdown");
+const scpMenu = document.querySelector(".scp-menu");
+
+sideUserProfile.addEventListener("click", () => {
+  // alert("working");
+  scpMenu.classList.toggle(".scp-menu-active");
+});
