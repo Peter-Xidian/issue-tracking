@@ -25,8 +25,8 @@
   <aside class="flex-center sidebar">
     <div class="flex-center flex-col sidebar-container">
       <div class="flex-center sc-logo">
-        <img src="assets/img/logo.svg" alt="" />
-        <span>SAFIRIDE</span>
+        <img src="assets/img/safiride-logo-white.png" alt="" />
+        <!-- <span>SAFIRIDE</span> -->
       </div>
 
       <div class="flex-center sc-links">
@@ -62,6 +62,18 @@
         <span class="material-symbols-outlined" id="sc-dropdown">
           expand_more
         </span>
+
+        <div class="flex-center scp-menu">
+<div class="flex-center flex-col scpm">
+  <div class="flex-center flex-col scpm-user">
+    <img src="assets/img/profile-pics/app-1.jpg" alt="">
+    <h3>Jonathan Clover</h3>
+    <p>Product Manager</p>
+  </div>
+
+  <button>Manage User Profile</button>
+</div>
+        </div>
       </div>
     </div>
   </aside>
@@ -96,7 +108,7 @@
               </span>
             </div>
 
-            <div class="dhc">
+            <div class="dhc" id="view-projects">
               <span>Projects Completed</span>
               <h3>78 <span>%</span></h3>
               <span class="material-symbols-outlined" id="dhc-span">
@@ -104,7 +116,7 @@
               </span>
             </div>
 
-            <div class="dhc">
+            <div class="dhc" id="view-tasks">
               <span>Tasks Due</span>
               <h3>22 <span>%</span></h3>
               <span class="material-symbols-outlined" id="dhc-span">
@@ -112,7 +124,7 @@
               </span>
             </div>
 
-            <div class="dhc">
+            <div class="dhc" id="view-tasks">
               <span>Newly Assigned</span>
               <h3>42 <span>tasks</span></h3>
               <span class="material-symbols-outlined" id="dhc-span">
@@ -276,7 +288,7 @@
             <div class="flex-center flex-col dbi-projects">
               <div class="flex-center dbip-title">
                 <h4>My projects</h4>
-                <span>View all</span>
+                <span id="view-projects">View all</span>
               </div>
 
               <div class="flex-center flex-col dbip-cards">
@@ -401,9 +413,8 @@
                 <div class="flex-center ths-select">
                   <select name="sort" id="">
                     <option value="status">status</option>
-                    <option value="status">option 2</option>
-                    <option value="status">option 3</option>
-                    <option value="status">option 4</option>
+                    <option value="status">due date</option>
+                    <option value="status">id</option>
                   </select>
                 </div>
               </div>
