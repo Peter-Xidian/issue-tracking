@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Issue Tracking Dashboard</title>
+
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- ===== MATERIAL ICONS =====-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- ===== BOXICONS =====-->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- ===== AOS (Animate On Scroll) =====-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <aside class="flex-center sidebar">
+    <div class="flex-center flex-col sidebar-container">
+      <div class="flex-center sc-logo">
+        <img src="assets/img/logo.svg" alt="" />
+        <span>SAFIRIDE</span>
+      </div>
+
+      <div class="flex-center sc-links">
+        <ul class="flex-center flex-col scl-ul">
+          <li class="scl-link">
+            <span class="material-symbols-outlined"> dashboard </span>Dashboard
+          </li>
+          <li class="scl-link">
+            <span class="material-symbols-outlined"> inventory </span>Tasks
+          </li>
+          <li class="scl-link">
+            <span class="material-symbols-outlined"> description </span>Projects
+          </li>
+          <li class="scl-link">
+            <span class="material-symbols-outlined"> notifications </span>Notifications
+          </li>
+          <li class="scl-link">
+            <span class="material-symbols-outlined"> settings </span>Settings
+          </li>
+          <li class="scl-link">
+            <span class="material-symbols-outlined"> help </span>Customer
+            Support
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex-center sc-profile">
+        <img src="assets/img/profile-pics/app-1.jpg" alt="User Profile Picture" />
+        <div class="flex-center flex-col scp-name">
+          <p>Jonathan C</p>
+          <span>Product Manager</span>
+        </div>
+        <span class="material-symbols-outlined" id="sc-dropdown">
+          expand_more
+        </span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="flex-center main-container">
+    <!-- DASHBOARD SECTION -->
+    <section class="flex-center mc active-container">
+      <div class="flex-center flex-col d-container">
+        <div class="flex-center flex-col d-header">
+          <div class="flex-center dh-title">
+            <div class="flex-center flex-col dht-text">
+              <span>Good Morning, James!</span>
+              <h1>Dashboard</h1>
+            </div>
+
+            <div class="flex-center dht-form">
+              <div class="flex-center dhtf-input">
+                <span class="material-symbols-outlined"> search </span>
+                <input type="text" name="" id="" placeholder="Search" autocomplete="on" required class="title-search" />
+              </div>
+
+              <button>Create new project</button>
+            </div>
+          </div>
+
+          <div class="flex-center dh-cards">
+            <div class="dhc">
+              <span>Hours this week</span>
+              <h3>32 <span>/Hrs</span></h3>
+              <span class="material-symbols-outlined" id="dhc-span">
+                schedule
+              </span>
+            </div>
+
+            <div class="dhc">
+              <span>Projects Completed</span>
+              <h3>78 <span>%</span></h3>
+              <span class="material-symbols-outlined" id="dhc-span">
+                task
+              </span>
+            </div>
+
+            <div class="dhc">
+              <span>Tasks Due</span>
+              <h3>22 <span>%</span></h3>
+              <span class="material-symbols-outlined" id="dhc-span">
+                description
+              </span>
+            </div>
+
+            <div class="dhc">
+              <span>Newly Assigned</span>
+              <h3>42 <span>tasks</span></h3>
+              <span class="material-symbols-outlined" id="dhc-span">
+                schedule
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-center d-body">
+          <div class="flex-center flex-col db-tasks">
+            <div class="flex-center dbt-title">
+              <h3>My tasks</h3>
+
+              <span id="view-tasks">View all</span>
+            </div>
+
+            <div class="flex-center flex-col dbt-cards">
+              <div class="flex-center flex-col dbtc" id="view-tasks">
+                <div class="flex-center flex-col dbtc-title">
+                  <span>ID KL-2</span>
+                  <h4>Reports animation</h4>
+                </div>
+
+                <p class="dbtc-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Labore, ipsa! Nam sint odit quis commodi.
+                </p>
+
+                <div class="flex-center dbtc-dets">
+                  <span id="dbtcd-priority">high</span>
+
+                  <div class="flex-center dbtcd-workers">
+                    <img src="assets/img/profile-pics/pp-3.jpg" alt="" />
+                    <img src="assets/img/profile-pics/pp-4.jpg" alt="" />
+                  </div>
+
+                  <p class="dbtcd-date">Jul 2 - Jul 16</p>
+                </div>
+
+                <span class="material-symbols-outlined dbtc-expand">
+                  pan_zoom
+                </span>
+
+                <span class="material-symbols-outlined dbtc-arrow">
+                  expand_more
+                </span>
+              </div>
+
+              <div class="flex-center flex-col dbtc" id="view-tasks">
+                <div class="flex-center flex-col dbtc-title">
+                  <span>ID LG-1528</span>
+                  <h4>Home Page Illustrations</h4>
+                </div>
+
+                <p class="dbtc-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Labore, ipsa! Nam sint odit quis commodi.
+                </p>
+
+                <div class="flex-center dbtc-dets">
+                  <span id="medium-priority">medium</span>
+
+                  <div class="flex-center dbtcd-workers">
+                    <img src="assets/img/profile-pics/pp-1.jpg" alt="" loading="lazy"/>
+                    <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy"/>
+                  </div>
+
+                  <p class="dbtcd-date">Jul 2 - Jul 16</p>
+                </div>
+
+                <span class="material-symbols-outlined dbtc-expand">
+                  pan_zoom
+                </span>
+
+                <span class="material-symbols-outlined dbtc-arrow">
+                  expand_more
+                </span>
+              </div>
+
+              <div class="flex-center flex-col dbtc" id="view-tasks">
+                <div class="flex-center flex-col dbtc-title">
+                  <span>ID LG-15289</span>
+                  <h4>Payment Gateway Integration</h4>
+                </div>
+
+                <p class="dbtc-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Labore, ipsa! Nam sint odit quis commodi.
+                </p>
+
+                <div class="flex-center dbtc-dets">
+                  <span id="dbtcd-priority">high</span>
+
+                  <div class="flex-center dbtcd-workers">
+                    <img src="assets/img/profile-pics/pp-1.jpg" alt="" loading="lazy"/>
+                    <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy"/>
+                  </div>
+
+                  <p class="dbtcd-date">Jul 2 - Jul 16</p>
+                </div>
+
+                <span class="material-symbols-outlined dbtc-expand">
+                  pan_zoom
+                </span>
+
+                <span class="material-symbols-outlined dbtc-arrow">
+                  expand_more
+                </span>
+              </div>
+
+              <div class="flex-center dbtca">
+                <p>Add new task</p>
+                <span class="material-symbols-outlined"> add </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-center flex-col db-info">
+            <div class="flex-center dbi-stats">
+              <div class="flex-center flex-col dbis-graph">
+                <div class="flex-center flex-col dbisg-title">
+                  <h4>Statistics</h4>
+                  <span>tasks created vs tasks Completed</span>
+                </div>
+
+                <div class="flex-center dbisg-img">
+                  <img src="assets/img/db-graph.PNG" alt="Statistics-graph" />
+                </div>
+
+                <div class="flex-center dbisg-footer">
+                  <div>
+                    <span> </span>
+                    <p>created</p>
+                  </div>
+                  <div>
+                    <span> </span>
+                    <p>completed</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-center flex-col dbis-track">
+                <div class="flex-center flex-col dbist-title">
+                  <h4>June 30 - July 30</h4>
+                  <span>view all</span>
+                </div>
+
+                <div class="flex-center flex-col dbist-pie">
+                  <h3>80%</h3>
+                  <span>completed</span>
+                </div>
+
+                <div class="flex-center flex-col dbist-text">
+                  <p>You're doing good!</p>
+                  <span>You almost reached your goal</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center flex-col dbi-projects">
+              <div class="flex-center dbip-title">
+                <h4>My projects</h4>
+                <span>View all</span>
+              </div>
+
+              <div class="flex-center flex-col dbip-cards">
+                <div class="flex-center dbipc">
+                  <div class="flex-center dbipc-user">
+                    <span>Z</span>
+
+                    <div class="flex-center flex-col dbipcu-text">
+                      <h4>Zara</h4>
+                      <p><span>13 tasks</span>-<span>4 Overdue</span></p>
+                    </div>
+                  </div>
+
+                  <div class="flex-center dbipc-info">
+                    <div class="flex-center dbipci-imgs">
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="user-1" loading="lazy" />
+                      <img src="" alt="user-2" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="user-3" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="user-4" loading="lazy" />
+                    </div>
+
+                    <div class="dbipci-date">
+                      <span>Jul 13</span>
+                      -
+                      <span>Oct 2</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center dbipc">
+                  <div class="flex-center dbipc-user">
+                    <span>Z</span>
+
+                    <div class="flex-center flex-col dbipcu-text">
+                      <h4>Zara</h4>
+                      <p><span>13 tasks</span>-<span>4 Overdue</span></p>
+                    </div>
+                  </div>
+
+                  <div class="flex-center dbipc-info">
+                    <div class="flex-center dbipci-imgs">
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="user-1" loading="lazy" />
+                      <img src="" alt="user-2" loading="lazy" />
+                      <img src="" alt="user-3" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-1.jpg" alt="user-4" loading="lazy" />
+                    </div>
+
+                    <div class="dbipci-date">
+                      <span>Jul 13</span>
+                      -
+                      <span>Oct 2</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center dbipc">
+                  <div class="flex-center dbipc-user">
+                    <span>Z</span>
+
+                    <div class="flex-center flex-col dbipcu-text">
+                      <h4>Zara</h4>
+                      <p><span>13 tasks</span>-<span>4 Overdue</span></p>
+                    </div>
+                  </div>
+
+                  <div class="flex-center dbipc-info">
+                    <div class="flex-center dbipci-imgs">
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="user-1" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="user-2" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-1.jpg" alt="user-3" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="user-4" loading="lazy" />
+                    </div>
+
+                    <div class="dbipci-date">
+                      <span>Jul 13</span>
+                      -
+                      <span>Oct 2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASKS SECTION -->
+    <section class="flex-center mc">
+      <div class="flex-center flex-col t-container">
+        <div class="flex-center flex-col t-header">
+          <div class="flex-center th-title">
+            <div class="flex-center flex-col tht-text">
+              <div class="flex-center phtt">
+                <p class="back-dashboard">Home</p>
+                <span>></span>
+                <p>projects</p>
+              </div>
+              <h1>All tasks</h1>
+            </div>
+
+            <div class="flex-center dht-form">
+              <div class="flex-center dhtf-input">
+                <span class="material-symbols-outlined"> search </span>
+                <input type="text" name="" id="" placeholder="Search" autocomplete="on" required class="title-search" />
+              </div>
+
+              <button>Create new project</button>
+            </div>
+          </div>
+
+          <div class="flex-center th-filter">
+            <div class="flex-center th-options">
+              <ul class="flex-center thf-tabs">
+                <li class="thft active-filter-tab">list</li>
+                <li class="thft">board</li>
+              </ul>
+
+              <div class="flex-center th-sort">
+                <label for="">sort by:</label>
+
+                <div class="flex-center ths-select">
+                  <select name="sort" id="">
+                    <option value="status">status</option>
+                    <option value="status">option 2</option>
+                    <option value="status">option 3</option>
+                    <option value="status">option 4</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="flex-center th-priority">
+                <label for="">Priority:</label>
+
+                <ul class="flex-center thp-list">
+                  <li class="thpl">high</li>
+                  <li class="thpl active-priority-tab">medium</li>
+                  <li class="thpl">low</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="flex-center phf-btn">
+              <span class="material-symbols-outlined"> filter_list </span>
+              <p>Filter</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-center t-body">
+          <div class="flex-center t-list t-sub active-taskSub">
+            <div class="flex-center tl-groups">
+              <div class="flex-center flex-col tl-expand">
+                <div class="flex-center flex-col tle-title">
+                  <h3>Task information</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Neque ducimus sit ad voluptas, aliquam assumenda.
+                  </p>
+                </div>
+
+                <div class="flex-center flex-col tle-audio">
+                  <label for=""><span class="material-symbols-outlined"> push_pin </span>
+                    Janet T</label>
+
+                  <audio controls>
+                    <source src="horse.ogg" type="audio/ogg">
+                    <source src="horse.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                  </audio>
+                </div>
+
+                <div class="flex-center flex-col tl-subtask">
+                  <h3>Subtasks</h3>
+
+                  <div class="flex-center flex-col tls-cards">
+                    <div class="flex-center tlsc">
+                      <div class="flex-center tlsc-text">
+                        <span class="material-symbols-outlined">
+                          description
+                        </span>
+                        <span id="task-id">ID LG-21</span>
+                        <p>Components list of the best system</p>
+                      </div>
+
+                      <div class="tlsc-date">
+                        <p>yesterday</p>
+                      </div>
+                    </div>
+
+                    <div class="flex-center tlsc-new">
+                      <span class="material-symbols-outlined">
+                        add
+                      </span>
+                      <p>Create subtask</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center flex-col tl-activity">
+                  <h3>Activity</h3>
+
+                  <div class="flex-center flex-col tla-cards">
+                    <div class="flex-center flex-col tlac">
+                      <div class="flex-center tlac-header">
+                        <div class="flex-center tlach-user">
+                          <img src="assets/img/profile-pics/pp-3.jpg" alt="">
+                          <p>Mark B</p>
+                          <span>added comment</span>
+                        </div>
+
+                        <span id="tlach-time">1 hour ago</span>
+                      </div>
+
+                      <div class=" flex-center tlac-comment">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores, at veritatis asperiores
+                          nihil excepturi ut?</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex-center tla-input">
+                    <img src="assets/img/profile-pics/app-1.jpg" alt="" loading="lazy">
+
+                    <div class="flex-center tlai">
+                      <input type="text" name="" id="" placeholder="Add a comment..." required autocomplete="on">
+                      <div class="flex-center tlai-span">
+                        <span class="material-symbols-outlined" id="attach-icon">
+                          attach_file
+                        </span>
+                        <span class="material-symbols-outlined">
+                          mic
+                        </span>
+                        <span class="material-symbols-outlined" id="send-icon">
+                          send
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-center flex-col tl-categories">
+                <div class="flex-center flex-col tlc to-do">
+                  <div class="flex-center tlc-title">
+                    <h3>To-do</h3>
+
+                    <div class="flex-center tlct-nav">
+                      <span class="material-symbols-outlined">
+                        navigate_before
+                      </span>
+                      <span class="material-symbols-outlined">
+                        navigate_next
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center flex-col tlc-cards">
+                    <div class="flex-center tlcc">
+                      <div class="flex-center flex-col tlcc-text">
+                        <span>ID JNJ-2</span>
+                        <p>Logo design</p>
+                      </div>
+
+                      <div class="flex-center tlcc-dets">
+                        <div class="flex-center tlccd-img">
+                          <img src="assets/img/profile-pics/pp-4.jpg" alt="" />
+                          <img src="assets/img/profile-pics/pp-1.jpg" alt="" />
+                        </div>
+
+                        <span id="high-priority">high</span>
+
+                        <p>tomorrow</p>
+
+                        <span class="material-symbols-outlined" id="arrow-more">
+                          navigate_next
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="flex-center tlcc">
+                      <div class="flex-center flex-col tlcc-text">
+                        <span>ID YT-1</span>
+                        <p>Homepage Illustrations</p>
+                      </div>
+
+                      <div class="flex-center tlcc-dets">
+                        <div class="flex-center tlccd-img">
+                          <img src="assets/img/profile-pics/pp-3.jpg" alt="" />
+                          <img src="assets/img/profile-pics/pp-2.jpg" alt="" />
+                        </div>
+
+                        <span id="medium-priority">medium</span>
+
+                        <p>jul 14 - jul 23</p>
+
+                        <span class="material-symbols-outlined" id="arrow-more">
+                          navigate_next
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center flex-col tlc progress">
+                  <div class="flex-center tlc-title">
+                    <h3>In progress</h3>
+                  </div>
+
+                  <div class="flex-center flex-col tlc-cards">
+                    <div class="flex-center tlcc">
+                      <div class="flex-center flex-col tlcc-text">
+                        <span>ID KL-2</span>
+                        <p>Reports animation</p>
+                      </div>
+
+                      <div class="flex-center tlcc-dets">
+                        <div class="flex-center tlccd-img">
+                          <img src="assets/img/profile-pics/pp-4.jpg" alt="" />
+                          <img src="assets/img/profile-pics/pp-1.jpg" alt="" />
+                          <img src="assets/img/profile-pics/pp-4.jpg" alt="" />
+                        </div>
+
+                        <span id="high-priority">high</span>
+
+                        <p>today</p>
+
+                        <span class="material-symbols-outlined" id="arrow-more">
+                          navigate_next
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="flex-center tlcc">
+                      <div class="flex-center flex-col tlcc-text">
+                        <span>ID LG-2</span>
+                        <p>Landing Page</p>
+                      </div>
+
+                      <div class="flex-center tlcc-dets">
+                        <div class="flex-center tlccd-img">
+                          <img src="assets/img/profile-pics/pp-3.jpg" alt="" />
+                          <img src="assets/img/profile-pics/pp-2.jpg" alt="" />
+                        </div>
+
+                        <span id="medium-priority">medium</span>
+
+                        <p>jul 5 - jul 20</p>
+
+                        <span class="material-symbols-outlined" id="arrow-more">
+                          navigate_next
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="flex-center tlcc">
+                      <div class="flex-center flex-col tlcc-text">
+                        <span>ID KL-1</span>
+                        <p>Android Shortcuts</p>
+                      </div>
+
+                      <div class="flex-center tlcc-dets">
+                        <div class="flex-center tlccd-img">
+                          <img src="assets/img/profile-pics/pp-3.jpg" alt="" />
+                          <img src="assets/img/profile-pics/pp-2.jpg" alt="" />
+                        </div>
+
+                        <!-- <span id="medium-priority">medium</span> -->
+
+                        <p>jul 1 - jul 20</p>
+
+                        <span class="material-symbols-outlined" id="arrow-more">
+                          navigate_next
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center flex-col tlc backlog">
+                  <div class="flex-center tlc-title">
+                    <h3>Backlog</h3>
+                  </div>
+
+                  <div class="flex-center flex-col tlc-cards">
+                    <div class="flex-center tlcc">
+                      <div class="flex-center flex-col tlcc-text">
+                        <span>ID JNJ-2</span>
+                        <p>IOS shortcuts</p>
+                      </div>
+
+                      <div class="flex-center tlcc-dets">
+                        <div class="flex-center tlccd-img">
+                          <img src="assets/img/profile-pics/pp-4.jpg" alt="" />
+                          <img src="assets/img/profile-pics/pp-1.jpg" alt="" />
+                        </div>
+
+                        <span id="high-priority">high</span>
+
+                        <p>jul 12 - jul 26</p>
+
+                        <span class="material-symbols-outlined" id="arrow-more">
+                          navigate_next
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="flex-center tlcc">
+                      <div class="flex-center flex-col tlcc-text">
+                        <span>ID YT-2</span>
+                        <p>Logo app</p>
+                      </div>
+
+                      <div class="flex-center tlcc-dets">
+                        <div class="flex-center tlccd-img">
+                          <img src="assets/img/profile-pics/pp-3.jpg" alt="" />
+                          <img src="assets/img/profile-pics/pp-2.jpg" alt="" />
+                        </div>
+
+                        <span id="low-priority">low</span>
+
+                        <p>jul 18 - jul 27</p>
+
+                        <span class="material-symbols-outlined" id="arrow-more">
+                          navigate_next
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center tl-info">
+              <div class="flex-center flex-col tli-template">
+                <div class="flex-center tli-title">
+                  <h3>Task Details <span>ID LG-2</span></h3>
+                  <span class="material-symbols-outlined" id="arrow-expand">
+                    pan_zoom
+                  </span>
+                </div>
+
+                <div class="flex-center tli-list">
+                  <ul>
+                    <li>Name</li>
+                    <li>Status</li>
+                    <li>Priority</li>
+                    <li>Assignee</li>
+                    <li>Start date</li>
+                    <li>Target date</li>
+                    <li>Project</li>
+                  </ul>
+
+                  <ul>
+                    <li>Landing page</li>
+                    <li>In progress</li>
+                    <li><span>medium</span></li>
+                    <li>
+                      <img src="assets/img/profile-pics/app-1.jpg" alt="" />
+                      Nadia B
+                    </li>
+                    <li>jul 5, 2022</li>
+                    <li>jul 20, 2022</li>
+                    <li>Luminous Group</li>
+                  </ul>
+                </div>
+
+                <div class="flex-center flex-col tli-attached">
+                  <div class="flex-center tlia-title">
+                    <h3>Attached files</h3>
+                    <span>view all</span>
+                  </div>
+
+                  <div class="flex-center tlia-img">
+                    <img src="" alt="" loading="lazy" />
+                    <img src="" alt="" loading="lazy" />
+                  </div>
+
+                  <button>
+                    <span class="material-symbols-outlined">
+                      attach_file </span>Attach new file
+                  </button>
+                </div>
+
+                <div class="flex-center flex-col tli-metadata">
+                  <p>Created july 3, 2022 4:23pm by Yulia B</p>
+                  <p>Last updated <span>now</span>, by Yulia B</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-center t-board t-sub">
+            <div class="flex-center flex-col tb to-do">
+              <div class="flex-center tb-title">
+                <div class="flex-center tbt-text">
+                  <span class="material-symbols-outlined">
+                    radio_button_unchecked
+                  </span>
+                  <h3>To-do</h3>
+                  <p>(2)</p>
+                </div>
+
+                <span class="material-symbols-outlined"> add </span>
+              </div>
+
+              <div class="flex-center flex-col tb-cards">
+                <div class="flex-center flex-col tbc">
+                  <div class="flex-center tbc-header">
+                    <p>Logo Design</p>
+                    <span>ID JNJ-2</span>
+                  </div>
+
+                  <div class="flex-center tbc-footer">
+                    <div class="flex-center flex-col tbcf-status">
+                      <span>high</span>
+                      <p>tomorrow</p>
+                    </div>
+
+                    <div class="flex-center tbcf-img">
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center flex-col tbc">
+                  <div class="flex-center tbc-header">
+                    <p>Branding illustrations</p>
+                    <span>ID YT-1</span>
+                  </div>
+
+                  <div class="flex-center tbc-footer">
+                    <div class="flex-center flex-col tbcf-status">
+                      <span id="medium-priority">medium</span>
+                      <p>tomorrow</p>
+                    </div>
+
+                    <div class="flex-center tbcf-img">
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center tbc-new">
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center flex-col tb progress">
+              <div class="flex-center tb-title">
+                <div class="flex-center tbt-text">
+                  <span class="material-symbols-outlined">
+                    clock_loader_40
+                  </span>
+                  <h3>In progress</h3>
+                  <p>(3)</p>
+                </div>
+
+                <span class="material-symbols-outlined"> add </span>
+              </div>
+
+              <div class="flex-center flex-col tb-cards">
+                <div class="flex-center flex-col tbc">
+                  <div class="flex-center tbc-header">
+                    <p>Reports animation</p>
+                    <span>ID KL-2</span>
+                  </div>
+
+                  <div class="flex-center tbc-footer">
+                    <div class="flex-center flex-col tbcf-status">
+                      <span>high</span>
+                      <p>today</p>
+                    </div>
+
+                    <div class="flex-center tbcf-img">
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-1.jpg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center flex-col tbc">
+                  <div class="flex-center tbc-header">
+                    <p>Landing page</p>
+                    <span>ID LG-2</span>
+                  </div>
+
+                  <div class="flex-center tbc-footer">
+                    <div class="flex-center flex-col tbcf-status">
+                      <span id="medium-priority">medium</span>
+                      <p>jul 5 - jul 20</p>
+                    </div>
+
+                    <div class="flex-center tbcf-img">
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center flex-col tbc">
+                  <div class="flex-center tbc-header">
+                    <p>Android shortcuts</p>
+                    <span>ID LG-2</span>
+                  </div>
+
+                  <div class="flex-center tbc-footer">
+                    <div class="flex-center flex-col tbcf-status">
+                      <span id="low-priority">low</span>
+                      <p>jul 1 - jul 20</p>
+                    </div>
+
+                    <div class="flex-center tbcf-img">
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center tbc-new">
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center flex-col tb backlog">
+              <div class="flex-center tb-title">
+                <div class="flex-center tbt-text">
+                  <span class="material-symbols-outlined">
+                    change_circle
+                  </span>
+                  <h3>Backlog</h3>
+                  <p>(2)</p>
+                </div>
+
+                <span class="material-symbols-outlined"> add </span>
+              </div>
+
+              <div class="flex-center flex-col tb-cards">
+                <div class="flex-center flex-col tbc">
+                  <div class="flex-center tbc-header">
+                    <p>IOS shortcuts</p>
+                    <span>ID JNJ-2</span>
+                  </div>
+
+                  <div class="flex-center tbc-footer">
+                    <div class="flex-center flex-col tbcf-status">
+                      <span>high</span>
+                      <p>jul 12 - jul 26</p>
+                    </div>
+
+                    <div class="flex-center tbcf-img">
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/app-2.jpg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center flex-col tbc">
+                  <div class="flex-center tbc-header">
+                    <p>Logo app</p>
+                    <span>ID YT-2</span>
+                  </div>
+
+                  <div class="flex-center tbc-footer">
+                    <div class="flex-center flex-col tbcf-status">
+                      <span id="low-priority">low</span>
+                      <p>jul 18 - jul 27</p>
+                    </div>
+
+                    <div class="flex-center tbcf-img">
+                      <img src="assets/img/profile-pics/pp-1.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center tbc-new">
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center flex-col tb done">
+              <div class="flex-center tb-title">
+                <div class="flex-center tbt-text">
+                  <span class="material-symbols-outlined"> verified </span>
+                  <h3>Done</h3>
+                  <p>(1)</p>
+                </div>
+
+                <span class="material-symbols-outlined"> add </span>
+              </div>
+
+              <div class="flex-center flex-col tb-cards">
+                <div class="flex-center flex-col tbc">
+                  <div class="flex-center tbc-header">
+                    <p>Laptop screen blinks</p>
+                    <span>ID RR-1</span>
+                  </div>
+
+                  <div class="flex-center tbc-footer">
+                    <div class="flex-center flex-col tbcf-status">
+                      <span id="low-priority">low</span>
+                      <p>jun 21 - jul 5</p>
+                    </div>
+
+                    <div class="flex-center tbcf-img">
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-1.jpg" alt="" loading="lazy" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center tbc-new">
+                  <span class="material-symbols-outlined"> add </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="flex-center mc">
+      <div class="flex-center flex-col p-container">
+        <div class="flex-center flex-col p-header">
+          <div class="flex-center ph-title">
+            <div class="flex-center flex-col pht-text">
+              <div class="flex-center phtt">
+                <p class="back-dashboard">Home</p>
+                <span>></span>
+                <p>projects</p>
+              </div>
+              <h1>Projects</h1>
+            </div>
+
+            <div class="flex-center dht-form">
+              <div class="flex-center dhtf-input">
+                <span class="material-symbols-outlined"> search </span>
+                <input type="text" name="" id="" placeholder="Search" autocomplete="on" required class="title-search" />
+              </div>
+
+              <button>Create new project</button>
+            </div>
+          </div>
+
+          <div class="flex-center ph-filter">
+            <ul class="flex-center phf-tabs">
+              <li class="phft">all</li>
+              <li class="phft active-filter-tab">active</li>
+              <li class="phft">closed</li>
+              <li class="phft">on hold</li>
+            </ul>
+
+            <div class="flex-center phf-btn">
+              <span class="material-symbols-outlined"> filter_list </span>
+              <p>Filter</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-center p-body">
+          <div class="flex-center p-categories">
+            <div class="flex-center flex-col pc-active">
+              <div class="flex-center pca-title">
+                <h3>Active Projects</h3>
+
+                <div class="flex-center pcat-nav">
+                  <span class="material-symbols-outlined">
+                    navigate_before
+                  </span>
+                  <span class="material-symbols-outlined">
+                    navigate_next
+                  </span>
+                </div>
+              </div>
+
+              <div class="flex-center flex-col dbip-cards">
+
+                <div class="flex-center dbipc pca">
+                  <div class="flex-center dbipc-user">
+                    <div class="flex-center flex-col dbipcu-text">
+                      <h4>Marc Jacobs</h4>
+                      <p><span>13 tasks</span>-<span>4 Overdue</span></p>
+                    </div>
+                  </div>
+
+                  <div class="flex-center dbipc-info">
+                    <div class="flex-center dbipci-imgs">
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="user-1" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="user-2" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="user-3" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="user-4" loading="lazy" />
+                    </div>
+
+                    <div class="dbipci-date">
+                      <span>Jul 13</span>
+                      -
+                      <span>Oct 2</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center dbipc pca">
+                  <div class="flex-center dbipc-user">
+                    <div class="flex-center flex-col dbipcu-text">
+                      <h4>Zara</h4>
+                      <p><span>13 tasks</span>-<span>4 Overdue</span></p>
+                    </div>
+                  </div>
+
+                  <div class="flex-center dbipc-info">
+                    <div class="flex-center dbipci-imgs">
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="user-1" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="user-2" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="user-3" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="user-4" loading="lazy" />
+                    </div>
+
+                    <div class="dbipci-date">
+                      <span>Oct 17</span>
+                      -
+                      <span>Nov 24</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center dbipc pca">
+                  <div class="flex-center dbipc-user">
+                    <div class="flex-center flex-col dbipcu-text">
+                      <h4>Vodacom</h4>
+                      <p><span>13 tasks</span>-<span>4 Overdue</span></p>
+                    </div>
+                  </div>
+
+                  <div class="flex-center dbipc-info">
+                    <div class="flex-center dbipci-imgs">
+                      <img src="assets/img/profile-pics/pp-1.jpg" alt="user-1" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="user-2" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="user-3" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="user-4" loading="lazy" />
+                    </div>
+
+                    <div class="dbipci-date">
+                      <span>Jun 23</span>
+                      -
+                      <span>Jul 2</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex-center dbipc pca">
+                  <div class="flex-center dbipc-user">
+                    <div class="flex-center flex-col dbipcu-text">
+                      <h4>Universal Pictures</h4>
+                      <p><span>13 tasks</span>-<span>4 Overdue</span></p>
+                    </div>
+                  </div>
+
+                  <div class="flex-center dbipc-info">
+                    <div class="flex-center dbipci-imgs">
+                      <img src="assets/img/profile-pics/pp-5.jpg" alt="user-1" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-4.jpg" alt="user-2" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-3.jpg" alt="user-3" loading="lazy" />
+                      <img src="assets/img/profile-pics/pp-2.jpg" alt="user-4" loading="lazy" />
+                    </div>
+
+                    <div class="dbipci-date">
+                      <span>Feb 06</span>
+                      -
+                      <span>May 05</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-center pca-new">
+                <span class="material-symbols-outlined"> add </span>
+                <p>Create new project</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex-center p-desc">
+            <div class="flex-center flex-col pd-default pd">
+              <img src="assets/img/projects-illustration.svg" alt="" />
+              <p>Select project to see details</p>
+            </div>
+
+            <div class="flex-center flex-col pd-template pd pd-active">
+              <div class="flex-center flex-col pdt-title">
+                <h3>Project for Lorem Ipsum Group</h3>
+                <p>
+                  Brief description of projects and all it entails, brief
+                  description of projects and all it entails
+                </p>
+              </div>
+
+              <div class="flex-center pdt-profile">
+                <ul>
+                  <li>Client</li>
+                  <li>Start Date</li>
+                  <li>Target Date</li>
+                  <li>Members</li>
+                </ul>
+
+                <ul>
+                  <li>Lorem Ipsum Group</li>
+                  <li>Jul 13, 2022</li>
+                  <li>Oct 2, 2022</li>
+                  <li>
+                    <img src="assets/img/profile-pics/pp-3.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-4.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-5.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex-center flex-col pdt-tasks">
+                <div class="flex-center pdtt-title">
+                  <h3>Tasks</h3>
+                  <span>view all</span>
+                </div>
+
+                <div class="flex-center flex-col pdtt-cards">
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-1</span>
+                      <p>Landing Page</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>high</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-2</span>
+                      <p>App Icon</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>medium</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-3</span>
+                      <p>Branding</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>low</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-center flex-col pdt-progress">
+                <div class="flex-center pdtp-title">
+                  <h3>Progress</h3>
+                </div>
+
+                <div class="flex-center pdtp-track">
+                  <div><span></span></div>
+                  <p>42%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center flex-col pd-template pd">
+              <div class="flex-center flex-col pdt-title">
+                <h3>Project for Lorem Ipsum Group</h3>
+                <p>
+                  Brief description of projects and all it entails, brief
+                  description of projects and all it entails
+                </p>
+              </div>
+
+              <div class="flex-center pdt-profile">
+                <ul>
+                  <li>Client</li>
+                  <li>Start Date</li>
+                  <li>Target Date</li>
+                  <li>Members</li>
+                </ul>
+
+                <ul>
+                  <li>Lorem Ipsum Group</li>
+                  <li>Jul 13, 2022</li>
+                  <li>Oct 2, 2022</li>
+                  <li>
+                    <img src="assets/img/profile-pics/pp-3.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-4.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-5.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex-center flex-col pdt-tasks">
+                <div class="flex-center pdtt-title">
+                  <h3>Tasks</h3>
+                  <span>view all</span>
+                </div>
+
+                <div class="flex-center flex-col pdtt-cards">
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-1</span>
+                      <p>Landing Page</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>high</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-2</span>
+                      <p>App Icon</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>medium</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-3</span>
+                      <p>Branding</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>low</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-center flex-col pdt-progress">
+                <div class="flex-center pdtp-title">
+                  <h3>Progress</h3>
+                </div>
+
+                <div class="flex-center pdtp-track">
+                  <div><span></span></div>
+                  <p>42%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center flex-col pd-template pd">
+              <div class="flex-center flex-col pdt-title">
+                <h3>Project for Lorem Ipsum Group</h3>
+                <p>
+                  Brief description of projects and all it entails, brief
+                  description of projects and all it entails
+                </p>
+              </div>
+
+              <div class="flex-center pdt-profile">
+                <ul>
+                  <li>Client</li>
+                  <li>Start Date</li>
+                  <li>Target Date</li>
+                  <li>Members</li>
+                </ul>
+
+                <ul>
+                  <li>Lorem Ipsum Group</li>
+                  <li>Jul 13, 2022</li>
+                  <li>Oct 2, 2022</li>
+                  <li>
+                    <img src="assets/img/profile-pics/pp-3.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-4.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-5.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex-center flex-col pdt-tasks">
+                <div class="flex-center pdtt-title">
+                  <h3>Tasks</h3>
+                  <span>view all</span>
+                </div>
+
+                <div class="flex-center flex-col pdtt-cards">
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-1</span>
+                      <p>Landing Page</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>high</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-2</span>
+                      <p>App Icon</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>medium</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-3</span>
+                      <p>Branding</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>low</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-center flex-col pdt-progress">
+                <div class="flex-center pdtp-title">
+                  <h3>Progress</h3>
+                </div>
+
+                <div class="flex-center pdtp-track">
+                  <div><span></span></div>
+                  <p>42%</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-center flex-col pd-template pd">
+              <div class="flex-center flex-col pdt-title">
+                <h3>Project for Lorem Ipsum Group</h3>
+                <p>
+                  Brief description of projects and all it entails, brief
+                  description of projects and all it entails
+                </p>
+              </div>
+
+              <div class="flex-center pdt-profile">
+                <ul>
+                  <li>Client</li>
+                  <li>Start Date</li>
+                  <li>Target Date</li>
+                  <li>Members</li>
+                </ul>
+
+                <ul>
+                  <li>Lorem Ipsum Group</li>
+                  <li>Jul 13, 2022</li>
+                  <li>Oct 2, 2022</li>
+                  <li>
+                    <img src="assets/img/profile-pics/pp-3.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-4.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-5.jpg" alt="" loading="lazy" />
+                    <img src="assets/img/profile-pics/pp-2.jpg" alt="" loading="lazy" />
+                  </li>
+                </ul>
+              </div>
+
+              <div class="flex-center flex-col pdt-tasks">
+                <div class="flex-center pdtt-title">
+                  <h3>Tasks</h3>
+                  <span>view all</span>
+                </div>
+
+                <div class="flex-center flex-col pdtt-cards">
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-1</span>
+                      <p>Landing Page</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>high</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-2</span>
+                      <p>App Icon</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>medium</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="flex-center pdttc">
+                    <div class="flex-center flex-col pdttc-desc">
+                      <span>ID LG-3</span>
+                      <p>Branding</p>
+                    </div>
+
+                    <div class="pdttc-status">
+                      <p>low</p>
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-center flex-col pdt-progress">
+                <div class="flex-center pdtp-title">
+                  <h3>Progress</h3>
+                </div>
+
+                <div class="flex-center pdtp-track">
+                  <div><span></span></div>
+                  <p>42%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTIFICATIONS SECTION -->
+    <section class="flex-center mc">
+      <div class="flex-center flex-col n-container">
+        <lord-icon
+        src="https://cdn.lordicon.com/dxjqoygy.json"
+        trigger="loop"
+        delay="2000"
+        colors="primary:#13ae8f,secondary:#ff7a50"
+        style="width:300px;height:300px">
+    </lord-icon>
+    <h3>Coming Soon!</h3>
+    <p>Page is under construction</p>
+      </div>
+    </section>
+
+    <!-- SETTINGS SECTION -->
+    <section class="flex-center mc">
+      <div class="flex-center flex-col s-container">
+        <lord-icon
+        src="https://cdn.lordicon.com/dxjqoygy.json"
+        trigger="loop"
+        delay="2000"
+        colors="primary:#13ae8f,secondary:#ff7a50"
+        style="width:300px;height:300px">
+    </lord-icon>
+    <h3>Coming Soon!</h3>
+    <p>Page is under construction</p>
+      </div>
+    </section>
+
+    <!-- CUSTOMER SUPPORT SECTION -->
+    <section class="flex-center mc">
+      <div class="flex-center flex-col c-container">
+        <lord-icon
+        src="https://cdn.lordicon.com/dxjqoygy.json"
+        trigger="loop"
+        delay="2000"
+        colors="primary:#13ae8f,secondary:#ff7a50"
+        style="width:300px;height:300px">
+    </lord-icon>
+    <h3>Coming Soon!</h3>
+    <p>Page is under construction</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/index.js"></script>
+  <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+</body>
+
+</html>
